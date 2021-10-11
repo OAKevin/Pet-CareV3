@@ -21,16 +21,16 @@ Make sure you have Homebrew installed
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
   ``` 
 * Firebase
-   -Make sure to start a Firebase project and copy the credentails to src/components/Firebase.js
-   -With the Firebase project make sure that it has Firestore and Auth for account creation 
-   -The first time this project is run on a Firebase project, comment out the data injection code
-   located in src/components/Firebase.js, this code will initialize the disease information data for
-   the pet diagnosis feature. It will also create an admin in Firebase with 
-   default username: "ad.min"
-   default password: "temp" 
-   and is reccomended that the password is changed before deploying the app publicly
-   -The admin account is the only account that can create vets, while other admin account can be created
-   through Firebase it is advised that the amount of admin be kept to a minimum as much as possible. 
+    - Make sure to start a Firebase project and copy the credentails to src/components/Firebase.js
+    - With the Firebase project make sure that it has Firestore and Auth for account creation 
+    - The first time this project is run on a Firebase project, comment out the data injection code
+    located in src/components/Firebase.js, this code will initialize the disease information data for
+    the pet diagnosis feature. It will also create an admin in Firebase with <br />
+    default username: "ad.min" <br />
+    default password: "temp" <br />
+    and is reccomended that the password is changed before deploying the app publicly
+    - The admin account is the only account that can create vets, while other admin account can be created
+    through Firebase it is advised that the amount of admin be kept to a minimum as much as possible. 
 
 ### Installation
 
