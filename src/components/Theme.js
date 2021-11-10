@@ -22,6 +22,7 @@ type Theme = {
 		black: Color,
 		blue: Color,
 		orange: Color,
+		transparent: Color,
 	},
 	typography: {
 		color: string,
@@ -61,6 +62,7 @@ const theme: Theme = {
 		black: "#555555",
 		blue: "#0080ff",
 		orange: "#ffb347",
+		transparent: "transparent",
 	},
 	typography: {
 		color: "#555555",

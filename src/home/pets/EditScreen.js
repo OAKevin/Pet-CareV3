@@ -677,7 +677,7 @@ export default class EditScreen extends React.Component {
 										<FontAwesome5
 											name="dog"
 											size={30}
-											color={theme.palette.blue}
+											color={Theme.palette.blue}
 										/>
 									</TouchableOpacity>
 								)}
@@ -1153,7 +1153,7 @@ const styles = StyleSheet.create({
 	},
 	headerContainer: {},
 	headerColumn: {
-		backgroundColor: "transparent",
+		backgroundColor: Theme.palette.white,
 		...Platform.select({
 			ios: {
 				alignItems: "center",

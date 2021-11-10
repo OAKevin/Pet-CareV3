@@ -48,7 +48,7 @@ export default class ListItem extends Component {
 				break;
 			case "Dog":
 				petIcon = "dog";
-				speciesColor = "theme.palette.blue";
+				speciesColor = Theme.palette.blue;
 				break;
 			case "Bird":
 				petIcon = "dove";
