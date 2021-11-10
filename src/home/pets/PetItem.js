@@ -44,11 +44,11 @@ export default class ListItem extends Component {
 		switch (species) {
 			case "Cat":
 				petIcon = "cat";
-				speciesColor = theme.palette.orange;
+				speciesColor = "#ffb347";
 				break;
 			case "Dog":
 				petIcon = "dog";
-				speciesColor = Theme.palette.blue;
+				speciesColor = "#0080ff";
 				break;
 			case "Bird":
 				petIcon = "dove";
