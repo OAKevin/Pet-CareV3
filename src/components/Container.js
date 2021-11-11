@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import {StyleSheet, SafeAreaView, View} from "react-native";
+import {StyleSheet, SafeAreaView, View,ImageBackground} from "react-native";
 
 import {Theme} from "./Theme";
 
@@ -24,6 +24,7 @@ export default class Container extends React.PureComponent<ContainerProps> {
             <SafeAreaView style={styles.root}>
                 <View style={containerStyle}>{children}</View>
             </SafeAreaView>
+            
         );
     }
 }
