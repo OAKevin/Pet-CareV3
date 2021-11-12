@@ -81,7 +81,7 @@ export default class Patients extends Component {
         )
     }
     return (
-      <ImageBackground source={require('../assets/download.png')}style={[styles.container]}>
+      <ImageBackground source={require('../../../assets/white.png')} style={styles.container}>
 
         <NavHeader title="Patients" />
 
@@ -105,7 +105,7 @@ export default class Patients extends Component {
           dotIconHide
           />
 
-      </ImageBackground >
+      </ImageBackground>
     )
   }
 };
@@ -115,4 +115,6 @@ const styles = StyleSheet.create({
     // backgroundColor: Theme.palette.white,
     flex: 1,
   },
+  PatientItem: {
+  }
 });

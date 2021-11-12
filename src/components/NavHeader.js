@@ -64,11 +64,11 @@ const styles = StyleSheet.create({
 		borderColor: Theme.palette.borderColor,
 		borderBottomWidth: Platform.OS === "ios" ? 0 : 1,
 		zIndex: 10000,
-		backgroundColor: Theme.palette.primary,
+		backgroundColor: Theme.palette.tan,
 	},
 	content: {
 		marginTop: Platform.OS === "ios" ? 0 : 20,
-		height: 57,
+		height: 40,
 		flexDirection: "row",
 		justifyContent: "space-between",
 		alignItems: "center",

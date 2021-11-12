@@ -63,6 +63,8 @@ const theme: Theme = {
 		blue: "#0080ff",
 		orange: "#ffb347",
 		transparent: "transparent",
+		tan: "#A0CDCA",
+		lightgreen: "#E5FFDE",
 	},
 	typography: {
 		color: "#555555",

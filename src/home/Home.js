@@ -47,7 +47,7 @@ export class HomeTab extends React.Component<NavigationProps<*>> {
 
 const styles = StyleSheet.create({
     tabs: {
-        backgroundColor: "white",
+        backgroundColor: Theme.palette.green,
         shadowColor: "black",
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,
@@ -58,11 +58,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "row",
         justifyContent: "space-around",
-        height: 57
+        height: 40
     },
     tab: {
         flexGrow: 1,
-        height: 57,
+        height: 40,
         justifyContent: "center",
         alignItems: "center"
     }
