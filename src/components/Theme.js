@@ -23,6 +23,8 @@ type Theme = {
 		blue: Color,
 		orange: Color,
 		transparent: Color,
+		darkblue: Color,
+		lightblue: Color,
 	},
 	typography: {
 		color: string,
@@ -65,6 +67,8 @@ const theme: Theme = {
 		transparent: "transparent",
 		tan: "#A0CDCA",
 		lightgreen: "#E5FFDE",
+		darkblue: "#1750AC",
+		lightblue: "#73B9EE",
 	},
 	typography: {
 		color: "#555555",

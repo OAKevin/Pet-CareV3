@@ -25,7 +25,7 @@ export class VetTab extends React.Component<NavigationProps<*>> {
                 <View style={styles.container}>
                     {
                         VetTab.tabs.map((info, i) => {
-                            const color = i === cIdx ? Theme.palette.primary : Theme.palette.lightGray;
+                            const color = i === cIdx ? Theme.palette.darkblue : Theme.palette.lightGray;
                             return (
                                 <TouchableWithoutFeedback
                                     key={info.label}
@@ -46,7 +46,7 @@ export class VetTab extends React.Component<NavigationProps<*>> {
 
 const styles = StyleSheet.create({
     tabs: {
-        backgroundColor: Theme.palette.tan,
+        backgroundColor: Theme.palette.white,
         shadowColor: "black",
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,

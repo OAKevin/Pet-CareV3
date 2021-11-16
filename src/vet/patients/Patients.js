@@ -81,7 +81,7 @@ export default class Patients extends Component {
         )
     }
     return (
-      <ImageBackground source={require('../../../assets/white.png')} style={styles.container}>
+      <ImageBackground source={require('../../../assets/pattern.png')} style={styles.container}>
 
         <NavHeader title="Patients" />
 
