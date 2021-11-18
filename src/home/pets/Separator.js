@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
+import { Theme } from '../../components'
 
 const styles = StyleSheet.create({
   container: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   separator: {
-    borderColor: '#EDEDED',
+    borderColor: Theme.palette.lightGray,
     borderWidth: 0.8,
     flex: 8,
     flexDirection: 'row',

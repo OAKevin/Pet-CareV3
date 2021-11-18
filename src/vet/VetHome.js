@@ -47,7 +47,7 @@ export class VetTab extends React.Component<NavigationProps<*>> {
 const styles = StyleSheet.create({
     tabs: {
         backgroundColor: Theme.palette.white,
-        shadowColor: "black",
+        shadowColor: Theme.palette.black,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,
         shadowRadius: 5,

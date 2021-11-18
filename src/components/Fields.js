@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         color: Theme.typography.color,
         padding: Theme.spacing.small,
         marginBottom: Theme.spacing.base,
-        shadowColor: "black",
+        shadowColor: Theme.palette.black,
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.03,
         shadowRadius: 1,

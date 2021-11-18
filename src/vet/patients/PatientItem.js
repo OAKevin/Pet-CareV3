@@ -5,7 +5,6 @@ import { Dimensions, Image, Text, TouchableOpacity, View, StyleSheet } from 'rea
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { FontAwesome5 } from '@expo/vector-icons';
-
 import {Theme, } from "../../components";
 const { width, height } = Dimensions.get('window');
 
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
   },
   name: {
     paddingHorizontal: 10,
-    paddingVertical:2,
+    paddingBottom:2,
     fontWeight: '600',
     fontSize: 18,
     color: Theme.palette.darkblue,
@@ -103,7 +102,7 @@ const styles = StyleSheet.create({
     borderColor: Theme.palette.transparent,
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: .01,
+    //paddingVertical: .01,
     
   }
 })

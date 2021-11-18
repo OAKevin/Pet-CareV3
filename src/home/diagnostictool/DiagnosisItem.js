@@ -38,7 +38,7 @@ export default class ListItem extends Component {
             width,
             flexDirection: 'row',
             borderBottomWidth: 1,
-            borderColor: 'white'
+            borderColor: Theme.palette.white,
           }}
         >
           <View

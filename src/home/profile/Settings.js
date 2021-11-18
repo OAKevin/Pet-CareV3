@@ -137,7 +137,7 @@ export default class Settings extends React.Component {
                         <TouchableWithoutFeedback onPress={this.setPicture}>
                             <View style={styles.avatar}>
                                 <Image style={styles.profilePic} source={{ uri: this.state.pic }} />
-                                <Icon name="camera" size={25} color="white" style={styles.editIcon} />
+                                <Icon name="camera" size={25} color={Theme.palette.white} style={styles.editIcon} />
                             </View>
                         </TouchableWithoutFeedback>
                     </View>
@@ -170,7 +170,7 @@ export default class Settings extends React.Component {
 const logout = () => Firebase.auth.signOut();
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "white",
+        backgroundColor: Theme.palette.white,
         flex: 1,
     },
     content: {

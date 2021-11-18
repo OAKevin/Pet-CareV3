@@ -92,7 +92,7 @@ const { width, height } = Dimensions.get("window");
 const { statusBarHeight } = Constants;
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: Theme.palette.white,
     flex: 1,
   },
   avatar: {

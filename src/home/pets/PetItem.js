@@ -5,6 +5,7 @@ import { Dimensions, Image, Text, TouchableOpacity, View } from "react-native";
 import _ from "lodash";
 import PropTypes from "prop-types";
 import { FontAwesome5 } from "@expo/vector-icons";
+import {Theme} from "../../components";
 const { width, height } = Dimensions.get("window");
 
 export default class ListItem extends Component {
@@ -44,31 +45,20 @@ export default class ListItem extends Component {
 		switch (species) {
 			case "Cat":
 				petIcon = "cat";
-				speciesColor = "#ffb347";
+				speciesColor = Theme.palette.orange;
 				break;
 			case "Dog":
 				petIcon = "dog";
-				speciesColor = "#0080ff";
+				speciesColor = Theme.palette.blue;
 				break;
 			case "Bird":
 				petIcon = "dove";
-				speciesColor = "#c93335";
+				speciesColor = Theme.palette.red;
 				break;
-			case "Horse":
-				petIcon = "horse";
-				speciesColor = "#0dbf0d";
-				break;
-			case "Fish":
-				petIcon = "fish";
-				speciesColor = "#71b6f7";
-				break;
-			case "Exotic":
-				petIcon = "spider";
-				speciesColor = "#9379c2";
-				break;
+			
 			default:
 				petIcon = "question";
-				speciesColor = "black";
+				speciesColor = Theme.palette.black;
 				break;
 		}
 
@@ -91,7 +81,7 @@ export default class ListItem extends Component {
 						width,
 						flexDirection: "row",
 						borderBottomWidth: 1,
-						borderColor: "white",
+						borderColor: Theme.palette.white,
 					}}
 				>
 					<View
@@ -115,7 +105,7 @@ export default class ListItem extends Component {
 									padding: 1,
 									textAlign: "center",
 									fontWeight: "600",
-									color: "#fff",
+									color: Theme.palette.white,
 									fontSize: 14,
 								}}
 							>
@@ -178,7 +168,7 @@ export default class ListItem extends Component {
 							<FontAwesome5
 								name={sex == "female" ? "venus" : "mars"}
 								size={30}
-								color={sex == "female" ? "#e75480" : "#009dff"}
+								color={sex == "female" ? Theme.palette.pink : Theme.palette.blue}
 							/>
 						</View>
 						{breed && (
@@ -204,7 +194,7 @@ export default class ListItem extends Component {
 												height: 60,
 												fontSize: 20,
 												fontWeight: "300",
-												color: "#e75480",
+												color: Theme.palette.pink,
 												paddingTop: 8,
 												paddingLeft: 3,
 										  }
@@ -212,7 +202,7 @@ export default class ListItem extends Component {
 												height: 60,
 												fontSize: 20,
 												fontWeight: "300",
-												color: "#009dff",
+												color: Theme.palette.blue,
 												paddingTop: 8,
 												paddingLeft: 3,
 										  }
@@ -227,20 +217,5 @@ export default class ListItem extends Component {
 		);
 	}
 }
-ListItem.propTypes = {
-	// Selected:PropTypes.bool,
-	seen: PropTypes.bool,
-	name: PropTypes.string,
-	pic: PropTypes.string,
-	species: PropTypes.string,
-	createspeciesColor: PropTypes.bool,
-};
-ListItem.DefaultProps = {
-	/*
-	 * Name:PropTypes.string,
-	 * pic:PropTypes.string,
-	 * species:"",
-	 */
-	selected: false,
-	createspeciesColor: true,
-};
+
+

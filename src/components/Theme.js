@@ -25,6 +25,8 @@ type Theme = {
 		transparent: Color,
 		darkblue: Color,
 		lightblue: Color,
+		red: Color,
+		pink: Color,
 	},
 	typography: {
 		color: string,
@@ -69,6 +71,9 @@ const theme: Theme = {
 		lightgreen: "#E5FFDE",
 		darkblue: "#1750AC",
 		lightblue: "#73B9EE",
+		orange: "#ffb347",
+		red: "#c93335",
+		pink: "#E75480",
 	},
 	typography: {
 		color: "#555555",

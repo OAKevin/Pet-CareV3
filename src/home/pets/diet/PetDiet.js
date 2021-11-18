@@ -672,7 +672,7 @@ const styles = StyleSheet.create({
     overflow: 'scroll'
   },
   prescBottom: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Theme.palette.white,
     alignSelf: 'center',
     padding: 10,
     marginTop: 0,
@@ -693,21 +693,21 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     paddingTop: 0,
     textAlign: 'left',
-    backgroundColor: `#00fa9a`,
-    borderColor: '#66cdaa',
+    backgroundColor: Theme.palette.secondary,
+    borderColor: Theme.palette.secondary,
     borderRadius: 10
   },
   header: {
-    backgroundColor: "#e0f4ff",
+    backgroundColor: Theme.palette.white,
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: Theme.palette.black,
     fontSize: 23,
     padding: 10,
     flexDirection: "row"
   },
   item: {
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: Theme.palette.black,
     fontSize: 15,
     padding: 10,
   },
@@ -721,7 +721,7 @@ const styles = StyleSheet.create({
   button_one: {
     justifyContent: 'space-around',
     width: '40%',
-    backgroundColor: `#00fa9a`,
+    backgroundColor: Theme.palette.secondary,
     height: 40,
     bottom: '1%',
     top: '1%',
@@ -729,12 +729,12 @@ const styles = StyleSheet.create({
     left: 5,
     margin: 5,
     borderWidth: 1,
-    borderColor: '#66cdaa',
+    borderColor: Theme.palette.secondary,
     borderRadius: 10
   }, 
   button_two: {
     justifyContent: 'space-around',
-    backgroundColor: `#9dffb0`,
+    backgroundColor: Theme.palette.secondary,
     height: 40,
     bottom: '1%',
     top: '2%'

@@ -58,7 +58,7 @@ export default class Walkthrough extends React.Component<ScreenProps<>, Walkthro
     componentDidMount() {
         StatusBar.setBarStyle("light-content");
         if (Platform.OS === "android") {
-            StatusBar.setBackgroundColor("#0059FF");
+            StatusBar.setBackgroundColor(Theme.palette.blue);
         }
     }
 

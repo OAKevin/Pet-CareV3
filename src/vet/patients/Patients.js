@@ -112,7 +112,6 @@ export default class Patients extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    // backgroundColor: Theme.palette.white,
     flex: 1,
   },
   PatientItem: {

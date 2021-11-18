@@ -175,7 +175,7 @@ export default class PetPrescription extends Component<> {
 
             searchInputPlaceholderText="Search prescriptions..."
             searchInputStyle={{ color: Theme.palette.black, fontFamily: "SFProText-Semibold" }}
-            styleInputGroup={{ backgroundColor: "#9dffb0", height: height / 15, borderRadius: 10, paddingRight: 15 }}
+            styleInputGroup={{ backgroundColor: Theme.palette.secondary, height: height / 15, borderRadius: 10, paddingRight: 15 }}
             styleDropdownMenuSubsection={{ height: height / 15, borderRadius: 10, width: "100%", paddingLeft: 25 }}
 
             tagTextColor={Theme.palette.black}
@@ -266,45 +266,45 @@ const styles = StyleSheet.create({
     overflow: 'scroll',
   },
   submitButton:{
-    borderColor: '#808080',
+    borderColor: Theme.palette.lightGray,
     borderWidth: 1,
     borderRadius: 10,
-    backgroundColor: '#9dffb0',
+    backgroundColor: Theme.palette.secondary,
     alignSelf: 'center',
     padding: 10,
   },
   prescriptionHistoryContainer:{
-    backgroundColor: '#fff',
+    backgroundColor: Theme.palette.white,
     padding: 10,
     borderWidth: 1,
-    borderColor: '#e0e0e0'
+    borderColor: Theme.palette.white,
   },
   prescriptionInputContainer:{
-    backgroundColor: '#fff',
+    backgroundColor: Theme.palette.white,
     paddingBottom: 35,
   },
   input: {
-    borderColor: '#808080',
+    borderColor: Theme.palette.grey,
     borderWidth: 1,
     borderRadius: 10,
     padding: 10,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: Theme.palette.white,
     margin: 12,
   },
   bigInput: {
-    borderColor: '#808080',
+    borderColor: Theme.palette.grey,
     borderWidth: 1,
     borderRadius: 10,
     padding: 10,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: Theme.palette.white,
     margin: 12,
     height: 100
   },
   item: {
     borderWidth: 1,
     borderRadius: 10,
-    backgroundColor: '#9dffb0',
-    borderColor: '#808080',
+    backgroundColor: Theme.palette.secondary,
+    borderColor: Theme.palette.lightGray,
     fontSize: 15,
     padding: 5,
   },

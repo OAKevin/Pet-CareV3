@@ -4,7 +4,7 @@ import DiagnosisItem from './DiagnosisItem';
 import _ from 'lodash';
 import Pagination from 'react-native-pagination';
 import Firebase from "../../components/Firebase";
-import { NavHeader, Text } from "../../components";
+import { NavHeader, Text, Theme } from "../../components";
 
 export default class DiagnosticToolResults extends Component {
 
@@ -87,7 +87,7 @@ const {height} = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: Theme.palette.white,
     flex: 1,
   },
   noItemsMessage: {

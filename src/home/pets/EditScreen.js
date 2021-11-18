@@ -583,7 +583,7 @@ export default class EditScreen extends React.Component {
 						<View style={styles.side}>
 							<TouchableOpacity onPress={this.goBackToPets}>
 								<View>
-									<Icon name="chevron-left" size={50} color="white" />
+									<Icon name="chevron-left" size={50} color={Theme.palette.white} />
 								</View>
 							</TouchableOpacity>
 						</View>
@@ -606,7 +606,7 @@ export default class EditScreen extends React.Component {
 							<Text
 								style={{
 									alignSelf: "center",
-									color: "black",
+									color: Theme.palette.black,
 									fontSize: 20,
 								}}
 							>

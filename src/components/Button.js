@@ -45,7 +45,7 @@ export default class Button extends React.Component<> {
                 disabled = {disabled}
                 transparent = {!primary || transparent}
             >
-                {!!loading && (<Spinner color="white" />)}
+                {!!loading && (<Spinner color={Theme.palette.white} />)}
                 {!loading &&(
                 <Text
                     style={{

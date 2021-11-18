@@ -218,14 +218,14 @@ export default class PetDetailView extends Component {
             <View style={styles.side}>
               <TouchableOpacity onPress={this.goBackToPets}>
                   <View>
-                      <Icon name="chevron-left" size={50} color="white" />
+                      <Icon name="chevron-left" size={50} color={Theme.palette.white} />
                   </View>
               </TouchableOpacity>
             </View>
             <View style={styles.side}>
               <TouchableOpacity onPress={this.goToEditScreen}>
                   <View>
-                      <Icon type="font-awesome-5" name="edit" size={40} color="white" />
+                      <Icon type="font-awesome-5" name="edit" size={40} color={Theme.palette.white} />
                   </View>
               </TouchableOpacity>
             </View>
@@ -240,7 +240,7 @@ export default class PetDetailView extends Component {
               <View>
                 <Icon
                   name="paw"
-                  underlayColor="transparent"
+                  underlayColor={Theme.palette.transparent}
                   type="font-awesome-5"
                   iconStyle={styles.placeIcon}
                   onPress={this.toggleOverlay}
@@ -386,7 +386,7 @@ const styles = StyleSheet.create({
       width: 80,
   },
   cardContainer: {
-    backgroundColor: '#FFF',
+    backgroundColor: Theme.palette.white,
     borderWidth: 0,
     flex: 1,
     margin: 0,
@@ -397,7 +397,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   overlayContainer: {
-    backgroundColor: '#FFF',
+    backgroundColor: Theme.palette.white,
     width: width - 100,
     padding: 0,
   },
@@ -405,7 +405,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   emailContainer: {
-    backgroundColor: '#FFF',
+    backgroundColor: Theme.palette.white,
     paddingTop: 30,
   },
   headerBackgroundImage: {
@@ -427,7 +427,7 @@ const styles = StyleSheet.create({
     }),
   },
   labButton:{
-    backgroundColor: '#9dffb0',
+    backgroundColor: Theme.palette.primary,
     alignSelf: 'center',
     padding: 10,
     marginTop: 20
@@ -445,15 +445,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
 },
   placeIcon: {
-    color: 'white',
+    color: Theme.palette.white,
     fontSize: 26,
     paddingRight: 5,
   },
   scroll: {
-    backgroundColor: '#FFF',
+    backgroundColor: Theme.palette.white,
   },
   telContainer: {
-    backgroundColor: '#FFF',
+    backgroundColor: Theme.palette.white,
     paddingTop: 30,
   },
   userAddressRow: {
@@ -461,16 +461,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   userCityRow: {
-    backgroundColor: 'transparent',
+    backgroundColor: Theme.palette.transparent,
   },
   userCityText: {
-    color: '#A5A5A5',
+    color: Theme.palette.lightGray,
     fontSize: 15,
     fontWeight: '600',
     textAlign: 'center',
   },
   userImage: {
-    borderColor: '#FFF',
+    borderColor: Theme.palette.white,
     borderRadius: 85,
     borderWidth: 3,
     height: 170,
@@ -478,7 +478,7 @@ const styles = StyleSheet.create({
     width: 170,
   },
   userNameText: {
-    color: '#FFF',
+    color: Theme.palette.white,
     fontSize: 22,
     fontWeight: 'bold',
     paddingBottom: 8,

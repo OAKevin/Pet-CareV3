@@ -127,7 +127,7 @@ export default class Login extends React.Component<NavigationProps<*>, LoginStat
                         style={styles.textInput}
                     />
                 
-                    <Icon name= {icon} color= '#00aced' size= {25} onPress= {() => this.onPressEye()} style={{paddingTop:13, marginLeft:10}}/>
+                    <Icon name= {icon} color= {Theme.palette.blue} size= {25} onPress= {() => this.onPressEye()} style={{paddingTop:13, marginLeft:10}}/>
                 </View>
                 <View style={styles.container}>
                     <TouchableOpacity onPress={this.passwordReset}>
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
         color: Theme.typography.color,
         padding: Theme.spacing.small,
         marginBottom: Theme.spacing.base,
-        shadowColor: "black",
+        shadowColor: Theme.palette.black,
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.03,
         shadowRadius: 1,
